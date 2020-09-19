@@ -1,0 +1,15 @@
+src_list:
+  rtl:
+  - i2c_master_top.vhd
+  tb:
+  - tb.vhd
+submodules: null
+sim:
+  top_name: tb
+  pat_in: pat_in.txt
+  pat_out: pat_out.txt
+  dut_out: dut_out.txt
+  post_proc: null
+  fixed_cases:
+  - 00
+  #random_script: null #TODO

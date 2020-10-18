@@ -1,10 +1,10 @@
-# VHDL Blocks
+# VHDL Repo
 
 Repository for VHDL blocks and RTL simulation environment
 
 ## File structures
 ```
-vhdl_blocks
+vhdl_repo
 ├── scripts
 |   ├── main.py
 │   └── *.py
@@ -70,7 +70,7 @@ python ../scripts/main.py "$@" -m linux_local
 ```
 Use `run` (Windows) or `./run.sh` (Linux) to run the script.
 ```
-run init
+./run.sh init
 ```
 
 ## Operation types
@@ -81,16 +81,16 @@ cd [module_name]
 
 1. Linting check (compilation without testbench)
 ```
-run lint
+./run.sh lint
 ```
 
 2. Compile and simulation
 ```
-run sim
+./run.sh sim
 ```
 
 3. Debugging with waveform
 ```
-run view -s [fixed_case_name]
+./run.sh view -s [fixed_case_name]
 ```
 

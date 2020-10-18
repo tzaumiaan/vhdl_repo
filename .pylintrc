@@ -18,7 +18,7 @@ ignore-patterns=
 
 # Python code to execute, usually for sys.path manipulation such as
 # pygtk.require().
-init-hook="import sys; sys.path.append('../../'); sys.path.append('psd_control'); sys.path.append('psd_camera'); sys.path.append('oszi_remotemgmt_python')"
+init-hook=""
 
 # Use multiple processes to speed up Pylint. Specifying 0 will auto-detect the
 # number of processors available to use.
@@ -140,11 +140,7 @@ disable=print-statement,
         exception-escape,
         comprehension-escape,
         C0103,C0114,C0115,C0116,
-        C0301,C0326,
-        C0413,
-        R0902,R0912,R0913,R0914,R0915,
-        W0105,
-        W0201
+        R0903,R0914
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option

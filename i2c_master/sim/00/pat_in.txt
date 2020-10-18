@@ -1,0 +1,10 @@
+#### configuration ####
+# ckdiv
+0032
+#### data ####
+# addr, wr_bytes, wr_data, rd_bytes, rd_data
+18 2 0000000000fedc 4 00000076543210
+7f 7 fedcba98765432 0 00000000000000
+55 0 00000000000000 7 23456789abcdef
+71 1 ffffffffffffff 1 aaaaaaaaaaaaaa
+3f 3 0000000036eda7 3 00000000abcdef

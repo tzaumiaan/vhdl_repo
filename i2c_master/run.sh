@@ -1,1 +1,1 @@
-python ../scripts/main.py "$@"
+python ../scripts/main.py "$@" -m linux_local

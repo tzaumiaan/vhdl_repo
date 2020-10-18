@@ -1,7 +1,10 @@
 src_list:
   rtl:
+  - i2c_master_ctrl.vhd
+  - i2c_master_data.vhd
   - i2c_master_top.vhd
   tb:
+  - tb_pkg.vhd
   - tb.vhd
 submodules: null
 sim:
@@ -9,7 +12,8 @@ sim:
   pat_in: pat_in.txt
   pat_out: pat_out.txt
   dut_out: dut_out.txt
-  post_proc: null
+  pat_comp_script: null
   fixed_cases:
-  - 00
-  #random_script: null #TODO
+  - '00'
+  pat_gen_script: null
+  generated_cases: null

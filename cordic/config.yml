@@ -1,7 +1,10 @@
 src_list:
   rtl:
+    - cordic_core.vhd
+    - cordic_lzsh.vhd
     - cordic_top.vhd
   tb:
+    - tb_pkg.vhd
     - tb.vhd
 submodules: null
 sim:
@@ -9,7 +12,41 @@ sim:
   pat_in: pat_in.txt
   pat_out: pat_out.txt
   dut_out: dut_out.txt
-  pat_gen_script: null
-  pat_comp_script: null
-  fixed_cases: null
-  generated_cases: null
+  pat_gen_script: pat_gen_cordic
+  pat_comp_script: pat_comp_cordic
+  fixed_cases:
+    - basic
+  generated_cases:
+    vector_fixed_ampl:
+      timeout: "20 ms"
+      n_pat: 72000
+      cordic_mode: vector
+      ampl: {mode: fixed, value: 0x2000}
+    vector_random_ampl_normal:
+      timeout: "20 ms"
+      n_pat: 72000
+      cordic_mode: vector
+      ampl: {mode: random, range: [0x2000, 0x3fff], seed: 123}
+    vector_random_ampl_small:
+      timeout: "20 ms"
+      n_pat: 72000
+      cordic_mode: vector
+      ampl: {mode: random, range: [0x0fff, 0x1fff], seed: 321}
+    rotate_fixed_zero:
+      timeout: "1 ms"
+      n_pat: 3600
+      cordic_mode: rotate
+      ampl: {mode: random, range: [0x1000, 0x3fff], seed: 456}
+      theta_init: {mode: fixed, value: 0x0000}
+    rotate_fixed_ampl:
+      timeout: "1 ms"
+      n_pat: 3600
+      cordic_mode: rotate
+      ampl: {mode: fixed, value: 0x3fff}
+      theta_init: {mode: random, range: [0x0000, 0xffff], seed: 789}
+    rotate_random:
+      timeout: "1 ms"
+      n_pat: 3600
+      cordic_mode: rotate
+      ampl: {mode: random, range: [0x1000, 0x3fff], seed: 999}
+      theta_init: {mode: random, range: [0x0000, 0xffff], seed: 888}

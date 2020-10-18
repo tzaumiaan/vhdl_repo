@@ -123,25 +123,28 @@ def module_simulate(cfg):
     sim_summary = dict()
     case_dir_list = list()
     # fixed patterns
-    for sim_case in cfg["sim"]["fixed_cases"]:
-        case_dir = os_utils.mkdir(".", sim_case)
-        os.chdir(case_dir)
-        print("Preparing fixed case [{}] ...".format(sim_case))
-        # link necessay files here
-        pat_case_path = os.path.join(pat_shared_path, sim_case)
-        # 1. sim.tcl: search for case folder first, then use the shared one
-        for _p in [pat_case_path, pat_shared_path]:
-            _src = os.path.join(_p, module_utils.sim_tcl_name)
-            if os.path.exists(_src):
-                os_utils.symlink(_src, module_utils.sim_tcl_name)
-                break
-        assert os.path.exists(module_utils.sim_tcl_name), "Error: tcl file not found!"
-        # 2. pattern input and output
-        for _f in os.listdir(pat_case_path):
-            if _f.endswith(".txt"):
-                os_utils.symlink(os.path.join(pat_case_path, _f), _f)
-        os.chdir(cfg["__work_dir__"])
-        case_dir_list.append(case_dir)
+    if cfg["sim"]["fixed_cases"] is not None:
+        for sim_case in cfg["sim"]["fixed_cases"]:
+            case_dir = os_utils.mkdir(".", sim_case)
+            os.chdir(case_dir)
+            print("Preparing fixed case [{}] ...".format(sim_case))
+            # link necessay files here
+            pat_case_path = os.path.join(pat_shared_path, sim_case)
+            # 1. sim.tcl: search for case folder first, then use the shared one
+            for _p in [pat_case_path, pat_shared_path]:
+                _src = os.path.join(_p, module_utils.sim_tcl_name)
+                if os.path.exists(_src):
+                    os_utils.symlink(_src, module_utils.sim_tcl_name)
+                    break
+            assert os.path.exists(
+                module_utils.sim_tcl_name
+            ), "Error: tcl file not found!"
+            # 2. pattern input and output
+            for _f in os.listdir(pat_case_path):
+                if _f.endswith(".txt"):
+                    os_utils.symlink(os.path.join(pat_case_path, _f), _f)
+            os.chdir(cfg["__work_dir__"])
+            case_dir_list.append(case_dir)
     # generated patterns
     if cfg["sim"]["generated_cases"] is not None:
         assert (

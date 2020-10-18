@@ -39,8 +39,8 @@ def create_config(module_name):
         f.write("  dut_out: dut_out.txt\n")
         f.write("  pat_gen_script: null\n")
         f.write("  pat_comp_script: null\n")
-        f.write("  fixed_cases: []\n")
-        f.write("  generated_cases: []\n")
+        f.write("  fixed_cases: null\n")
+        f.write("  generated_cases: null\n")
         f.close()
 
 

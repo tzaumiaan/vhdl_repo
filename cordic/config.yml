@@ -1,0 +1,15 @@
+src_list:
+  rtl:
+    - cordic_top.vhd
+  tb:
+    - tb.vhd
+submodules: null
+sim:
+  top_name: tb
+  pat_in: pat_in.txt
+  pat_out: pat_out.txt
+  dut_out: dut_out.txt
+  pat_gen_script: null
+  pat_comp_script: null
+  fixed_cases: null
+  generated_cases: null

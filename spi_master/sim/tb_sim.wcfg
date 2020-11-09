@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sim.wdb" id="1">
+         <top_modules>
+            <top_module name="tb" />
+            <top_module name="tb_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="21100000001fs"></ZoomEndTime>
+      <Cursor1Time time="6024237000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="274"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_spi_master_top/ready_o" type="logic">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/trig_i" type="logic">
+      <obj_property name="ElementShortName">trig_i</obj_property>
+      <obj_property name="ObjectShortName">trig_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_en_i" type="logic">
+      <obj_property name="ElementShortName">rx_en_i</obj_property>
+      <obj_property name="ObjectShortName">rx_en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cpol_i" type="logic">
+      <obj_property name="ElementShortName">cpol_i</obj_property>
+      <obj_property name="ObjectShortName">cpol_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cpha_i" type="logic">
+      <obj_property name="ElementShortName">cpha_i</obj_property>
+      <obj_property name="ObjectShortName">cpha_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/nbits_i" type="array">
+      <obj_property name="ElementShortName">nbits_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">nbits_i[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ckdiv_i" type="array">
+      <obj_property name="ElementShortName">ckdiv_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ckdiv_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/tx_word_i" type="array">
+      <obj_property name="ElementShortName">tx_word_i[47:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_word_i[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_data_a_o" type="array">
+      <obj_property name="ElementShortName">rx_data_a_o[47:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data_a_o[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_data_b_o" type="array">
+      <obj_property name="ElementShortName">rx_data_b_o[47:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data_b_o[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/spi_trig" type="logic">
+      <obj_property name="ElementShortName">spi_trig</obj_property>
+      <obj_property name="ObjectShortName">spi_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/mst_ready" type="logic">
+      <obj_property name="ElementShortName">mst_ready</obj_property>
+      <obj_property name="ObjectShortName">mst_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/cnt_bitpha" type="array">
+      <obj_property name="ElementShortName">cnt_bitpha[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_bitpha[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/cnt_ckdiv" type="array">
+      <obj_property name="ElementShortName">cnt_ckdiv[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_ckdiv[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_block" type="array">
+      <obj_property name="ElementShortName">data_block[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_block[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_dump" type="array">
+      <obj_property name="ElementShortName">data_dump[47:0]</obj_property>
+      <obj_property name="ObjectShortName">data_dump[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">tx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/c2t_di_trig" type="logic">
+         <obj_property name="ElementShortName">c2t_di_trig</obj_property>
+         <obj_property name="ObjectShortName">c2t_di_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/u_ctrl/c2t_do_trig" type="logic">
+         <obj_property name="ElementShortName">c2t_do_trig</obj_property>
+         <obj_property name="ObjectShortName">c2t_do_trig</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/cs_o" type="logic">
+         <obj_property name="ElementShortName">cs_o</obj_property>
+         <obj_property name="ObjectShortName">cs_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/sck_o" type="logic">
+         <obj_property name="ElementShortName">sck_o</obj_property>
+         <obj_property name="ObjectShortName">sck_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/sdo_o" type="logic">
+         <obj_property name="ElementShortName">sdo_o</obj_property>
+         <obj_property name="ObjectShortName">sdo_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/spi_rxcs_i" type="logic">
+         <obj_property name="ElementShortName">spi_rxcs_i</obj_property>
+         <obj_property name="ObjectShortName">spi_rxcs_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/spi_rxsck_i" type="logic">
+         <obj_property name="ElementShortName">spi_rxsck_i</obj_property>
+         <obj_property name="ObjectShortName">spi_rxsck_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/spi_miso_a_i" type="logic">
+         <obj_property name="ElementShortName">spi_miso_a_i</obj_property>
+         <obj_property name="ObjectShortName">spi_miso_a_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/spi_miso_b_i" type="logic">
+         <obj_property name="ElementShortName">spi_miso_b_i</obj_property>
+         <obj_property name="ObjectShortName">spi_miso_b_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/sync_cs" type="logic">
+         <obj_property name="ElementShortName">sync_cs</obj_property>
+         <obj_property name="ObjectShortName">sync_cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/sync_sck" type="logic">
+         <obj_property name="ElementShortName">sync_sck</obj_property>
+         <obj_property name="ObjectShortName">sync_sck</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/sync_miso_a" type="logic">
+         <obj_property name="ElementShortName">sync_miso_a</obj_property>
+         <obj_property name="ObjectShortName">sync_miso_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/sync_miso_b" type="logic">
+         <obj_property name="ElementShortName">sync_miso_b</obj_property>
+         <obj_property name="ObjectShortName">sync_miso_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/rx_data_a" type="array">
+         <obj_property name="ElementShortName">rx_data_a[47:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data_a[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/u_spi_master_top/gen_rx_slv/u_rx/rx_data_b" type="array">
+         <obj_property name="ElementShortName">rx_data_b[47:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data_b[47:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

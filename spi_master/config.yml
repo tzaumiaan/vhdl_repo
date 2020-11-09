@@ -1,0 +1,24 @@
+src_list:
+  rtl:
+    - spi_master_syncle.vhd
+    - spi_master_ctrl.vhd
+    - spi_master_tx.vhd
+    - spi_master_rx.vhd
+    - spi_master_top.vhd
+  tb:
+    - tb_pkg.vhd
+    - tb.vhd
+submodules: null
+sim:
+  top_name: tb
+  pat_in: pat_in.txt
+  pat_out: pat_out.txt
+  dut_out: dut_out.txt
+  pat_gen_script: null
+  pat_comp_script: null
+  fixed_cases:
+    - master_cpol0_cpha0
+    - master_cpol0_cpha1
+    - master_cpol1_cpha0
+    - master_cpol1_cpha1
+  generated_cases: null

@@ -1,3 +1,5 @@
 .*.sw[op]
 work_*
 __pycache__
+vivado.*
+.srcs
